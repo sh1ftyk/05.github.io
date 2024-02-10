@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  line-height: 1;
+  color: #000000;
+  border: none;
+  outline: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  padding-top: 2rem;
+}
+
+.wrapper {
+  height: -moz-max-content;
+  height: max-content;
+  width: auto;
+  margin: auto;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  background-color: #c4c4c4;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    max-width: 25rem;
+  }
+}
+.search {
+  background-color: #fff;
+  border: none;
+  font-size: 2rem;
+  box-sizing: border-box;
+  padding: 0.25rem 0.5rem;
+  outline: none;
+  width: 100%;
+  cursor: pointer;
+}
+
+.hints {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hints__item {
+  background-color: #e3e3e3;
+  border: solid 1px #000000;
+  font-size: 1.25rem;
+  box-sizing: border-box;
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+}
+
+.hints__item:hover,
+.hints__item:active {
+  background-color: #65cdf9;
+}
+
+.found {
+  padding-top: 1rem;
+}
+
+.results {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.results__item {
+  background-color: #e27beb;
+  box-sizing: border-box;
+  border: solid 1px #000000;
+  border-top-color: #e27beb;
+  font-size: 1rem;
+  padding: 0.33rem 0.67rem;
+  position: relative;
+}
+
+.results__item a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.results__item a:hover,
+.results__item a:focus {
+  text-decoration: underline;
+}
+
+.results__item ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.results__item li {
+  line-height: 1.25;
+}
+
+.results__item span {
+  color: #8a408a;
+}
+
+.search-form__set {
+  border: none;
+  padding: 0;
+}
+
+.results__item:first-child {
+  border-top-color: #101010;
+}
+
+.x {
+  position: absolute;
+  z-index: 999;
+  right: 40px;
+  top: 45px;
+  width: 20px;
+  height: 20px;
+  background: transparent url(./x.svg) 50% 50% no-repeat;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
